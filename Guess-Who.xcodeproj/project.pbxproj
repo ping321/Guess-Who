@@ -16,6 +16,7 @@
 		396B57DC1C7567A200827216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396B57DA1C7567A200827216 /* LaunchScreen.storyboard */; };
 		396B57E71C7567A200827216 /* Guess_WhoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B57E61C7567A200827216 /* Guess_WhoTests.m */; };
 		396B57F21C7567A200827216 /* Guess_WhoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B57F11C7567A200827216 /* Guess_WhoUITests.m */; };
+		984BC1EDD8C2569DAF0CA9BD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D4199EE89D9F70FEE7B1C2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12CF2F74D9C0C108477A8777 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		396B57C61C7567A200827216 /* Guess-Who.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess-Who.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		396B57CA1C7567A200827216 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		396B57CC1C7567A200827216 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		396B57ED1C7567A200827216 /* Guess-WhoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guess-WhoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		396B57F11C7567A200827216 /* Guess_WhoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Guess_WhoUITests.m; sourceTree = "<group>"; };
 		396B57F31C7567A200827216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59D4199EE89D9F70FEE7B1C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		921F54EE31E81F5E5326941C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				984BC1EDD8C2569DAF0CA9BD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33A46E18C45FB2D07CE5DD8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59D4199EE89D9F70FEE7B1C2 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		396B57BD1C7567A200827216 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +100,8 @@
 				396B57E51C7567A200827216 /* Guess-WhoTests */,
 				396B57F01C7567A200827216 /* Guess-WhoUITests */,
 				396B57C71C7567A200827216 /* Products */,
+				B85A221A7AE3AFA972151C41 /* Pods */,
+				33A46E18C45FB2D07CE5DD8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +158,15 @@
 			path = "Guess-WhoUITests";
 			sourceTree = "<group>";
 		};
+		B85A221A7AE3AFA972151C41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12CF2F74D9C0C108477A8777 /* Pods.debug.xcconfig */,
+				921F54EE31E81F5E5326941C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 396B57F61C7567A200827216 /* Build configuration list for PBXNativeTarget "Guess-Who" */;
 			buildPhases = (
+				7E97574780125A1E4936F0CD /* Check Pods Manifest.lock */,
 				396B57C21C7567A200827216 /* Sources */,
 				396B57C31C7567A200827216 /* Frameworks */,
 				396B57C41C7567A200827216 /* Resources */,
+				BD2DAE1C39C15D78187CAE2E /* Embed Pods Frameworks */,
+				E5004697129DD94E8E419D83 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E97574780125A1E4936F0CD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BD2DAE1C39C15D78187CAE2E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5004697129DD94E8E419D83 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		396B57C21C7567A200827216 /* Sources */ = {
@@ -415,6 +490,7 @@
 		};
 		396B57F71C7567A200827216 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12CF2F74D9C0C108477A8777 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Guess-Who/Info.plist";
@@ -426,6 +502,7 @@
 		};
 		396B57F81C7567A200827216 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 921F54EE31E81F5E5326941C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Guess-Who/Info.plist";
@@ -502,6 +579,7 @@
 				396B57F81C7567A200827216 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		396B57F91C7567A200827216 /* Build configuration list for PBXNativeTarget "Guess-WhoTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +588,7 @@
 				396B57FB1C7567A200827216 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		396B57FC1C7567A200827216 /* Build configuration list for PBXNativeTarget "Guess-WhoUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +597,7 @@
 				396B57FE1C7567A200827216 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
