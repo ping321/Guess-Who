@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
+#import <SDImageCache.h>
+#import "GuessWho-Swift.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window =[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController =  [[HomeViewController alloc]init];
     return YES;
 }
 

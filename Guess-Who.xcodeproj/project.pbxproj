@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		395960D51C758FD20026F795 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 395960D41C758FD20026F795 /* libAFNetworking.a */; };
+		395960D71C758FD60026F795 /* libSVProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 395960D61C758FD60026F795 /* libSVProgressHUD.a */; };
+		395960D91C758FD90026F795 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 395960D81C758FD90026F795 /* libSDWebImage.a */; };
+		395960E21C7593270026F795 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395960E11C7593270026F795 /* HomeViewController.swift */; };
+		395960E51C75976C0026F795 /* H_NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395960E41C75976C0026F795 /* H_NavigationController.m */; };
+		395960E81C75978F0026F795 /* H_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395960E71C75978F0026F795 /* H_ViewController.m */; };
 		396B57CB1C7567A200827216 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B57CA1C7567A200827216 /* main.m */; };
 		396B57CE1C7567A200827216 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B57CD1C7567A200827216 /* AppDelegate.m */; };
 		396B57D11C7567A200827216 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 396B57D01C7567A200827216 /* ViewController.m */; };
@@ -38,6 +44,16 @@
 
 /* Begin PBXFileReference section */
 		12CF2F74D9C0C108477A8777 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		395960D41C758FD20026F795 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
+		395960D61C758FD60026F795 /* libSVProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSVProgressHUD.a; path = "Pods/../build/Debug-iphoneos/libSVProgressHUD.a"; sourceTree = "<group>"; };
+		395960D81C758FD90026F795 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
+		395960DE1C7592AD0026F795 /* Guess-Who-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guess-Who-Bridging-Header.h"; sourceTree = "<group>"; };
+		395960E11C7593270026F795 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		395960E31C75976C0026F795 /* H_NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H_NavigationController.h; sourceTree = "<group>"; };
+		395960E41C75976C0026F795 /* H_NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H_NavigationController.m; sourceTree = "<group>"; };
+		395960E61C75978F0026F795 /* H_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H_ViewController.h; sourceTree = "<group>"; };
+		395960E71C75978F0026F795 /* H_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H_ViewController.m; sourceTree = "<group>"; };
+		395960EB1C75A0D60026F795 /* MYPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPrefixHeader.pch; sourceTree = "<group>"; };
 		396B57C61C7567A200827216 /* Guess-Who.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess-Who.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		396B57CA1C7567A200827216 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		396B57CC1C7567A200827216 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395960D91C758FD90026F795 /* libSDWebImage.a in Frameworks */,
+				395960D71C758FD60026F795 /* libSVProgressHUD.a in Frameworks */,
+				395960D51C758FD20026F795 /* libAFNetworking.a in Frameworks */,
 				984BC1EDD8C2569DAF0CA9BD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +107,9 @@
 		33A46E18C45FB2D07CE5DD8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				395960D81C758FD90026F795 /* libSDWebImage.a */,
+				395960D61C758FD60026F795 /* libSVProgressHUD.a */,
+				395960D41C758FD20026F795 /* libAFNetworking.a */,
 				59D4199EE89D9F70FEE7B1C2 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -110,8 +132,46 @@
 		395960D31C758C310026F795 /* Super */ = {
 			isa = PBXGroup;
 			children = (
+				395960E31C75976C0026F795 /* H_NavigationController.h */,
+				395960E41C75976C0026F795 /* H_NavigationController.m */,
+				395960E61C75978F0026F795 /* H_ViewController.h */,
+				395960E71C75978F0026F795 /* H_ViewController.m */,
+				395960EB1C75A0D60026F795 /* MYPrefixHeader.pch */,
 			);
 			path = Super;
+			sourceTree = "<group>";
+		};
+		395960DA1C75928D0026F795 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				395960DB1C75928D0026F795 /* Controller */,
+				395960DC1C75928D0026F795 /* Model */,
+				395960DD1C75928D0026F795 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		395960DB1C75928D0026F795 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				395960DE1C7592AD0026F795 /* Guess-Who-Bridging-Header.h */,
+				395960E11C7593270026F795 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		395960DC1C75928D0026F795 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		395960DD1C75928D0026F795 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		396B57BD1C7567A200827216 = {
@@ -142,6 +202,7 @@
 		396B57C81C7567A200827216 /* Guess-Who */ = {
 			isa = PBXGroup;
 			children = (
+				395960DA1C75928D0026F795 /* Home */,
 				396B57CC1C7567A200827216 /* AppDelegate.h */,
 				396B57CD1C7567A200827216 /* AppDelegate.m */,
 				396B57CF1C7567A200827216 /* ViewController.h */,
@@ -372,6 +433,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395960E81C75978F0026F795 /* H_ViewController.m in Sources */,
+				395960E51C75976C0026F795 /* H_NavigationController.m in Sources */,
+				395960E21C7593270026F795 /* HomeViewController.swift in Sources */,
 				396B57D11C7567A200827216 /* ViewController.m in Sources */,
 				396B57CE1C7567A200827216 /* AppDelegate.m in Sources */,
 				396B57D71C7567A200827216 /* Guess_Who.xcdatamodeld in Sources */,
@@ -450,12 +514,15 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -469,6 +536,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -494,10 +562,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -506,6 +577,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -517,10 +589,22 @@
 			baseConfigurationReference = 12CF2F74D9C0C108477A8777 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Super/MYPrefixHeader.pch";
 				INFOPLIST_FILE = "Guess-Who/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ping.Guess-Who";
+				PRODUCT_MODULE_NAME = GuessWho;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Guess-Who/Home/Controller/Guess-Who-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -529,10 +613,21 @@
 			baseConfigurationReference = 921F54EE31E81F5E5326941C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Super/MYPrefixHeader.pch";
 				INFOPLIST_FILE = "Guess-Who/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ping.Guess-Who";
+				PRODUCT_MODULE_NAME = GuessWho;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Guess-Who/Home/Controller/Guess-Who-Bridging-Header.h";
 			};
 			name = Release;
 		};
