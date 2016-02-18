@@ -1,25 +1,84 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upT-Ep-CUd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="1" green="0.82880089192644935" blue="0.88060259096338833" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hop-OA-rzG">
+                                <rect key="frame" x="143" y="461" width="34" height="30"/>
+                                <state key="normal" title="login"/>
+                                <connections>
+                                    <action selector="btnAct:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Msc-QX-efY"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hz7-Fw-vrm">
+                                <rect key="frame" x="112" y="372" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBW-dR-PmC">
+                                <rect key="frame" x="112" y="417" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hop-OA-rzG" firstAttribute="centerX" secondItem="upT-Ep-CUd" secondAttribute="centerX" id="0aJ-9O-pLl"/>
+                            <constraint firstItem="upT-Ep-CUd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="17Y-OR-csd"/>
+                            <constraint firstItem="upT-Ep-CUd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="6qB-LI-vgv"/>
+                            <constraint firstItem="JBW-dR-PmC" firstAttribute="centerX" secondItem="hz7-Fw-vrm" secondAttribute="centerX" id="85L-41-MRo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="upT-Ep-CUd" secondAttribute="trailing" constant="-20" id="E5m-lg-KC6"/>
+                            <constraint firstItem="JBW-dR-PmC" firstAttribute="trailing" secondItem="Hop-OA-rzG" secondAttribute="trailing" id="H6X-gk-Fmv"/>
+                            <constraint firstItem="Hop-OA-rzG" firstAttribute="top" secondItem="upT-Ep-CUd" secondAttribute="bottom" constant="-105" id="PtW-Is-zuf"/>
+                            <constraint firstItem="upT-Ep-CUd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="Rdn-eX-Cfg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="upT-Ep-CUd" secondAttribute="bottom" id="Yrr-wH-wDK"/>
+                            <constraint firstItem="JBW-dR-PmC" firstAttribute="top" secondItem="hz7-Fw-vrm" secondAttribute="bottom" constant="13" id="fD2-cx-fc6"/>
+                            <constraint firstItem="Hop-OA-rzG" firstAttribute="top" secondItem="JBW-dR-PmC" secondAttribute="bottom" constant="18" id="mui-mM-TIq"/>
+                            <constraint firstItem="hz7-Fw-vrm" firstAttribute="centerX" secondItem="upT-Ep-CUd" secondAttribute="centerX" id="och-YU-MJP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="login" destination="Hop-OA-rzG" id="CwA-nh-gHq"/>
+                        <outlet property="password" destination="JBW-dR-PmC" id="O50-Ec-8r4"/>
+                        <outlet property="userName" destination="hz7-Fw-vrm" id="TgD-zk-cKX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-467" y="164"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JSD-qu-PSV">
+            <objects>
+                <navigationController id="m65-HI-map" customClass="H_NavigationController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="DLX-uy-Te1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LvE-iY-J21">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vho-sw-NY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-53" y="159"/>
         </scene>
     </scenes>
 </document>

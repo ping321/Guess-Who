@@ -9,6 +9,7 @@
 #ifndef MYPrefixHeader_pch
 #define MYPrefixHeader_pch
 #import <Foundation/Foundation.h>
+#import <NIMSDK.h>
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "H_NavigationController.h"
