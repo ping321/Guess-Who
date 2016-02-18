@@ -93,9 +93,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		395960D11C758C310026F795 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		395960D21C758C310026F795 /* NetData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetData;
+			sourceTree = "<group>";
+		};
+		395960D31C758C310026F795 /* Super */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Super;
+			sourceTree = "<group>";
+		};
 		396B57BD1C7567A200827216 = {
 			isa = PBXGroup;
 			children = (
+				395960D11C758C310026F795 /* Externals */,
+				395960D21C758C310026F795 /* NetData */,
+				395960D31C758C310026F795 /* Super */,
 				396B57C81C7567A200827216 /* Guess-Who */,
 				396B57E51C7567A200827216 /* Guess-WhoTests */,
 				396B57F01C7567A200827216 /* Guess-WhoUITests */,
