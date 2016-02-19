@@ -7,12 +7,12 @@
 //
 
 import UIKit
-
-class HomeViewController: H_ViewController {
-
+class HomeViewController: H_ViewController,MyButtonDelegate{
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.redColor()
+        self.creatButton()
         // Do any additional setup after loading the view.
     }
 
@@ -20,8 +20,15 @@ class HomeViewController: H_ViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
+    func creatButton(){
+        let buttonPlay = FuctionButton(type: 0, fame: CGRectMake(0, 100,50,20), title:"play", action: "Home", index: 0)
+        buttonPlay.myButtonDelegate = self
+        self.view.addSubview(buttonPlay)
+    }
+    func defaultJumpd() {
+        let vc = GameController()
+        self.push(vc, animated: true)
+    }
     /*
     // MARK: - Navigation
 

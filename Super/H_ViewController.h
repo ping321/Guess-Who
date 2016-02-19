@@ -21,6 +21,7 @@
 
 + (id)instance;
 - (id)initWithNetType:(BOOL)showNetProgress;
+- (id)initWithType:(BOOL)isNoback;
 - (void)rightButton:(NSString*)title;
 - (void)rightButtonWithTitle:(NSString*)title andImage:(UIImage*)image;
 - (void)rightButtonImageStr:(NSString *)imgStr;

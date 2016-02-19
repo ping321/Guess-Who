@@ -35,10 +35,17 @@
     }
     return self;
 }
-
-
+- (id)initWithType:(BOOL)isNoback
+{
+    self = [super initWithNibName:NSStringFromClass([self class]) bundle:nil];
+    if(self){
+        self.isNoBackNav = isNoback;
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController setNavigationBarHidden:NO];
     //    UIView *viewBg = [[UIView alloc]initWithFrame:CGRectMake(0, -64, 320.0, 64)];
     //    viewBg.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1];
     //    viewBg.backgroundColor = [UIColor redColor];
@@ -216,7 +223,6 @@
     [leftButton addTarget:self action:@selector(leftClick) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
 }
-
 //- (UIBarButtonItem *)leftBarButton{
 //
 //
@@ -251,7 +257,6 @@
 ////    backBtn!.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
 //    return nil;
 //}
-
 
 - (void)leftClick
 {

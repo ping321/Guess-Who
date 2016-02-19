@@ -11,6 +11,7 @@
 #import <SVProgressHUD.h>
 #import <SDImageCache.h>
 #import "GuessWho-Swift.h"
+#import <NIMSDK.h>
 @interface AppDelegate ()
 
 @end
@@ -19,8 +20,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-   
+//    // Override point for customization after application launch.
+//    self.window =[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    [self.window makeKeyAndVisible];
+//    self.window.rootViewController =  [[HomeViewController alloc]init];
+    
+    [[NIMSDK sharedSDK] registerWithAppID:@"3cbfe884a6015219f77132717a76b062"
+                                  cerName:nil];
+    
+
     return YES;
 }
 

@@ -9,10 +9,12 @@
 #ifndef MYPrefixHeader_pch
 #define MYPrefixHeader_pch
 #import <Foundation/Foundation.h>
+#import <NIMSDK.h>
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "H_NavigationController.h"
 #import "H_ViewController.h"
+#import "UIView+FindUIViewController.h"
 #define UI_SCREEN_WIDTH                 ([[UIScreen mainScreen] bounds].size.width)
 #define UI_SCREEN_HEIGHT                ([[UIScreen mainScreen] bounds].size.height)
 #define SELF_VIEW_HEIGHT (UI_SCREEN_HEIGHT-64)
