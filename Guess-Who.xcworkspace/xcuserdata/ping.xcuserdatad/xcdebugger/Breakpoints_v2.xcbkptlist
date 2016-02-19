@@ -38,7 +38,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Super/H_ViewController.m"
@@ -54,15 +54,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Guess-Who/Home/View/FuctionButton.swift"
-            timestampString = "477558637.008314"
+            timestampString = "477562033.840257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "defaultJump()"
             landmarkType = "5">
          </BreakpointContent>
@@ -70,17 +70,111 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Guess-Who/Home/View/FuctionButton.swift"
-            timestampString = "477558650.453187"
+            timestampString = "477562033.840257"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "init(type:fame:title:action:index:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Guess-Who/Home/View/FuctionButton.swift"
+            timestampString = "477562033.840257"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "defaultJump()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Guess-Who/Home/View/FuctionButton.swift"
+            timestampString = "477562033.840257"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "FuctionButton"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GuessWho.FuctionButton.actionBlock.getter : Swift.Optional&lt;() -&gt; ()&gt;"
+                  moduleName = "Guess-Who"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ping/final/Guess-Who/Guess-Who/Home/View/FuctionButton.swift"
+                  timestampString = "477562033.918451"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GuessWho.FuctionButton.init (GuessWho.FuctionButton.Type)(frame : __C.CGRect) -&gt; GuessWho.FuctionButton"
+                  moduleName = "Guess-Who"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ping/final/Guess-Who/Guess-Who/Home/View/FuctionButton.swift"
+                  timestampString = "477562033.920617"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "143">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GuessWho.FuctionButton.init (GuessWho.FuctionButton.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;GuessWho.FuctionButton&gt;"
+                  moduleName = "Guess-Who"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ping/final/Guess-Who/Guess-Who/Home/View/FuctionButton.swift"
+                  timestampString = "477562033.921291"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GuessWho.FuctionButton.actionBlock.materializeForSet : Swift.Optional&lt;() -&gt; ()&gt;"
+                  moduleName = "Guess-Who"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ping/final/Guess-Who/Guess-Who/Home/View/FuctionButton.swift"
+                  timestampString = "477562033.924137"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

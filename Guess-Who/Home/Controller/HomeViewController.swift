@@ -22,7 +22,11 @@ class HomeViewController: H_ViewController,MyButtonDelegate{
     }
     func creatButton(){
         let buttonPlay = FuctionButton(type: 0, fame: CGRectMake(0, 100,50,20), title:"play", action: "Home", index: 0)
-        buttonPlay.myButtonDelegate = self
+//      buttonPlay.myButtonDelegate = self
+        let vc = GameController()
+        buttonPlay.actionBlock = {() in
+            self.push(vc)
+        }
         self.view.addSubview(buttonPlay)
     }
     func defaultJumpd() {

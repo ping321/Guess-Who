@@ -8,10 +8,11 @@
 
 import UIKit
 @objc protocol MyButtonDelegate{
-    func defaultJumpd()
 }
 class FuctionButton: UIView {
+    typealias funcBlock = () -> Void
     weak var myButtonDelegate:MyButtonDelegate?
+    var actionBlock = funcBlock?()
     var button:UIButton = UIButton()
     var label:UILabel = UILabel()
     convenience init(type:Int,fame:CGRect,title:String,action:String,index:Int){
@@ -24,7 +25,10 @@ class FuctionButton: UIView {
         self.addSubview(button)
     }
     func defaultJump(){
-        myButtonDelegate?.defaultJumpd()
+        //myButtonDelegate?.defaultJumpd()
+        if actionBlock != nil{
+            self.actionBlock!()
+        }
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
